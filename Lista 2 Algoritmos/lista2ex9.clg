@@ -1,0 +1,22 @@
+algoritmo lista2ex9;
+// Síntese
+//  Objetivo:  Calcular o salário líquido de um funcionário
+//  Entrada : Salário bruto do funcionário
+//  Saída   : Salário líquido do funcionário
+
+principal
+	// Declarações
+	real salarioBruto, salarioLiquido;
+	
+	// Instruções
+	escreva("Salário bruto do funcionário: R$ ");
+	leia(salarioBruto);
+
+	se (salarioBruto <= 1200) entao
+		salarioLiquido = salarioBruto * 0.89;
+	senao 
+		salarioLiquido = 1200 * 0.89 + (salarioBruto - 1200) * 0.80;
+	fimSe
+	
+	escreva("Salário líquido: R$ ", salarioLiquido);
+fimPrincipal

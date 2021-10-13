@@ -1,0 +1,23 @@
+algoritmo lista1ex2;
+// Síntese
+//  Objetivo:  Calcular a média de um aluno
+//  Entrada : nota 1, 2 e 3
+//  Saída   :  Média das 3 notas de um aluno
+
+
+principal
+	// Declarações
+	real n1, n2, n3, media;
+	
+	// Instruções
+	escreva("Nota 1: ");
+	leia(n1);
+	escreva("Nota 2: ");
+	leia(n2);
+	escreva("Nota 3: ");
+	leia(n3);
+
+	media = (n1 + n2 + n3) / 3;
+	escreva("Média: ", media);
+	
+fimPrincipal

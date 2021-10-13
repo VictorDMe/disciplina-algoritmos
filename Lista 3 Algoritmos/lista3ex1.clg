@@ -1,0 +1,26 @@
+algoritmo lista3ex1;
+// Síntese
+//  Objetivo:  Verificar se um número é positivo, negativo ou nulo;
+//  Entrada : Número
+//  Saída   : Positivo, negativo ou nulo;
+
+principal
+	// Declarações
+	real numero;
+	
+	// Instruções
+
+	escreva("Número: ");
+	leia(numero);
+
+	se (numero > 0) entao 
+		escreval("POSITIVO");
+	senao
+		se (numero < 0) entao
+		escreval("NEGATIVO");
+		senao
+			escreval("NULO");
+		fimSe
+	fimSe
+
+fimPrincipal

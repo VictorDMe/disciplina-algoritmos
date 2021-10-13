@@ -1,0 +1,20 @@
+algoritmo lista4ex2;
+// Síntese
+//  Objetivo:  Digitar todos os números até o número digitado
+//  Entrada : Número
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro numero, i;
+	
+	// Instruções
+	escreva("Número: ");
+	leia(numero);
+
+	i = 0;
+	enquanto (i < numero) faca
+		escreval(i);
+		i = i + 1;
+	fimEnquanto
+fimPrincipal

@@ -1,0 +1,61 @@
+algoritmo lista3ex9;
+// Síntese
+//  Objetivo:  Categorizar um membro de um clube
+//  Entrada : 
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro anoCategoria;
+	real rendaMensal, patrimonioLiquido;
+	caracter categoriaInicial, barcoAncorado, isPreRepublicaOuGovernador;
+	texto categoriaFinal;
+	
+	// Instruções
+
+	escreva("Renda mensal: ");
+	leia(rendaMensal);
+	
+	escreva("Patrimônio líquido: ");
+	leia(patrimonioLiquido);
+	
+	escreval("Qual sua categoria atualmente?");
+	escreval(" n = Não possuo");
+	escreval(" a = padrão");
+	escreval(" b = bronze");
+	escreval(" p = prata");
+	escreval(" o = ouro");
+	escreval(" d = diamante");
+	escreva("Sua resposta: ");
+	leiaCaracter(categoriaInicial);
+
+	escreva("Está a quantos anos nessa categoria? ");
+	leia(anoCategoria);
+
+	escreva("Possui um barco ancorado no clube? (s / n) ");
+	leiaCaracter(barcoAncorado);
+	
+	escreva("Você é presidente da república ou gorvenador? (s / n) ");
+	leiaCaracter(isPreRepublicaOuGovernador);
+
+	se ((rendaMensal >= 15000 e barcoAncorado == 's' e patrimonioLiquido >= 10000000) ou (isPreRepublicaOuGovernador == 's')) entao
+		categoriaFinal = "Diamante";
+	senao
+		se ((rendaMensal >= 7000 e categoriaInicial == 'p' e anoCategoria >= 20) ou (barcoAncorado == 's' e rendaMensal >= 10000)) entao
+			categoriaFinal = "Ouro";
+		senao
+			se (rendaMensal >= 5000 ou (categoriaInicial == 'b' e anoCategoria >= 5)) entao
+				categoriaFinal = "Prata";
+			senao
+				se (rendaMensal >= 3000 ou (categoriaInicial == 'a' e anoCategoria >= 10)) entao
+					categoriaFinal = "Bronze";
+				senao
+					categoriaFinal = "Padrão";
+				fimSe
+			fimSe
+		fimSe
+	fimSe
+	escreval("");
+	escreval("PARABÉNS!");
+	escreval("Sua categoria final é ", categoriaFinal, "!");
+fimPrincipal

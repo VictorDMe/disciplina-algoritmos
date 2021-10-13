@@ -1,0 +1,52 @@
+algoritmo lista5ex6;
+// Síntese
+//  Objetivo:  calculate the average of salary and childrens. Keep the bigger salary and  calculate the percentual of peoples with salary lower or equal to $100
+//  Entrada : Salary and quantity of childrens, 
+//  Saída   : average salary and childrens; Bigger Salary; Percentual of peoples with salary lower or equal to $100
+
+principal
+	// Declarações
+	real salary, salaryAVG, childrenAVG, biggerSalary, percentual;
+	inteiro children, counter;
+	
+	// Instruções
+	escreva("Salary: ");
+	leia(salary);
+
+	biggerSalary = 0;
+	salaryAVG = 0;
+	childrenAVG = 0;
+	counter = 0;
+	percentual = 0;
+	
+	enquanto (salary > 0) faca
+		escreva("Quantity of childrens: ");
+		leia(children);
+
+		salaryAVG = salaryAVG + salary;
+		childrenAVG = childrenAVG + children;
+
+		se (salary > biggerSalary) entao
+			biggerSalary = salary;
+		fimSe
+
+		se (salary <= 100) entao
+			percentual = percentual + 1;
+		fimSe
+		
+		counter = counter + 1;
+		escreval("");
+		escreva("Salary: ");
+		leia(salary);
+	fimEnquanto
+
+	salaryAVG = salaryAVG / counter;
+	childrenAVG = childrenAVG / counter;
+	percentual = percentual * 100 / counter;
+	escreval("");
+	escreval("Salary average:: ", salaryAVG);
+	escreval("Children average: ", childrenAVG);
+	escreval("Bigger salary: ", biggerSalary);
+	escreval(percentual, "% of peoples with salary lower or equal to $100");
+	
+fimPrincipal

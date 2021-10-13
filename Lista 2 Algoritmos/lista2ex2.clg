@@ -1,0 +1,21 @@
+algoritmo lista2ex2;
+// Síntese
+//  Objetivo:  Verificar se o motorista está dentro do limite de velocidade.
+//  Entrada : Velocidade do motorista.
+//  Saída   : Se ele está dentro do limite de velocidade ou não.
+
+principal
+	// Declarações
+	real velocidade;
+	
+	// Instruções
+	escreva("Velocidade do motorista: ");
+	leia(velocidade);
+
+	se (velocidade > 80) entao
+		escreva("O MOTORISTA ULTRAPASSOU O LIMITE DE VELOCIDADE MÁXIMA E SERÁ MULTADO");	
+
+	senao
+		escreva("O MOTORISTA ESTÁ DENTRO DO LIMITE DE VELOCIDADE"); 
+	fimSe
+fimPrincipal

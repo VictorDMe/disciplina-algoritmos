@@ -1,0 +1,23 @@
+algoritmo lista1ex10;
+// Síntese
+//  Objetivo:  Trocar o valor de duas variaveis
+//  Entrada : valor de A e B
+//  Saída   : valor de A e B
+
+principal
+	// Declarações
+	real a, b, suporte;
+	
+	// Instruções
+	escreva("Valor de A: ");
+	leia(a);
+	escreva("Valor de B: ");
+	leia(b);
+
+	suporte = a;
+	a = b;
+	b = suporte;
+
+	escreval("Novo valor de A: ", a);
+	escreval("Novo valor de B: ", b);
+fimPrincipal

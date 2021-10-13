@@ -1,0 +1,19 @@
+algoritmo lista1ex3;
+// Síntese
+//  Objetivo:  Mostrar o peso ideal de uma pessoa
+//  Entrada : Altura da pessoa
+//  Saída   : Peso ideal da pessoa
+
+
+principal
+	// Declarações
+	real altura, pesoIdeal;
+	// Instruções
+	escreva("Altura (em metros): ");
+	leia(altura);
+	
+	pesoIdeal = (altura - 1.10) * 100;
+
+	escreva("Peso ideal: ", pesoIdeal, " kg");
+	
+fimPrincipal

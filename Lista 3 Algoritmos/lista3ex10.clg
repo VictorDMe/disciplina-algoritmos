@@ -1,0 +1,63 @@
+algoritmo lsita3ex10;
+// Síntese
+//  Objetivo:  Imprimir o número por extenso
+//  Entrada : Número
+//  Saída   : Número por extenso
+
+principal
+	// Declarações
+	inteiro tamanhoNumero, i;
+	texto numero, valorAtual;
+	// Instruções
+	
+	escreva("Número: ");
+	leia(numero);
+	tamanhoNumero = tamanhoTexto(numero);
+
+	i = 0;
+	se (tamanhoNumero <= 3 e tamanhoNumero >= 1) entao
+		enquanto (i <= tamanhoNumero - 1) faca
+			valorAtual = copia(numero, i, i);
+			
+			se (comparaTexto(valorAtual, "1") == 0) entao
+				escreva("Um. ");
+			senao
+				se (comparaTexto(valorAtual, "2") == 0) entao
+					escreva("Dois. ");
+				senao
+					se (comparaTexto(valorAtual, "3") == 0) entao
+						escreva("Três. ");
+					senao
+						se (comparaTexto(valorAtual, "4") == 0) entao
+							escreva("Quatro. ");
+						senao
+							se (comparaTexto(valorAtual, "5") == 0) entao
+								escreval("Cinco. ");
+							senao
+								se (comparaTexto(valorAtual, "6") == 0) entao
+									escreva("Seis. ");
+								senao
+									se (comparaTexto(valorAtual, "7") == 0) entao
+										escreva("Sete. ");
+									senao
+										se (comparaTexto(valorAtual, "8") == 0) entao
+											escreva("Oito. ");
+										senao
+											se (comparaTexto(valorAtual, "9") == 0) entao
+												escreval("Nove. ");
+											fimSe
+										fimSe
+									fimSe
+								fimSe				
+							fimSe
+						fimSe
+					fimSe
+				fimSe
+			fimSe
+		i = i + 1;
+		fimEnquanto
+	senao
+		escreva("O número não está dentro do intervalo 0 e 1000");
+	
+	fimSe
+fimPrincipal

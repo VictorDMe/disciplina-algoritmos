@@ -1,0 +1,19 @@
+algoritmo lista1ex6;
+// Síntese
+//  Objetivo:  Calcular o salário líquido de um trabalhador
+//  Entrada : Salário bruto
+//  Saída   : Salário líquido
+
+
+principal
+	// Declarações
+	real salarioBruto, salarioLiquido;
+	
+	// Instruções
+	escreva("Salário bruto do trabalhador: R$ ");
+	leia(salarioBruto);
+
+	salarioLiquido = salarioBruto * 0.9 * 0.95;
+	escreva("Salário líquido: R$ ", salarioLiquido);
+	
+fimPrincipal

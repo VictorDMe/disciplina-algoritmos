@@ -1,0 +1,26 @@
+algoritmo lista5ex2;
+// Síntese
+//  Objetivo:  Verificar quantos meses serão necessários para que o montante na conta de uma pessoa chegue a R$ 10.000,00
+//  Entrada : Valor inicial
+//  Saída   : Quantidade de meses necessários
+
+principal
+	// Declarações
+	real valor, juros;
+	inteiro contadorMeses;
+	
+	// Instruções
+	juros = 0.015;
+
+	escreva("Valor inicial: ");
+	leia(valor);
+
+	contadorMeses = 0;
+	enquanto (valor <= 10000) faca
+		valor = valor * juros + valor;
+		contadorMeses = contadorMeses + 1;
+	fimEnquanto
+
+	escreva("Será necessário deixar o dinheiro na conta por ", contadorMeses, " meses para que o valor chega a R$ 10.000,00");
+	
+fimPrincipal

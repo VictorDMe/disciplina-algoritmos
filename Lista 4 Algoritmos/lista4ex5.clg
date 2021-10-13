@@ -1,0 +1,28 @@
+algoritmo lista4ex5;
+// Síntese
+//  Objetivo:  
+//  Entrada :
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro i;
+	real nota, somaNota;
+	texto nome;
+	
+	// Instruções
+	
+	somaNota = 0;
+	para (i de 1 ate 100 passo 1) faca
+		escreva("Nome do aluno: ");
+		leia(nome);
+		escreva("Nota do/a ", nome, ": ");
+		leia(nota);
+		escreval("");
+		somaNota = nota + somaNota;
+	fimPara
+
+	escreval("Média dos alunos digitados: ", somaNota / i);
+	
+fimPrincipal

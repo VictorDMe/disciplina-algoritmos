@@ -1,0 +1,25 @@
+algoritmo lista3ex3;
+// Síntese
+//  Objetivo:  Calcular o salário mensal de um funcionário
+//  Entrada : Horas trabalhadas, valor por hora;
+//  Saída   : Salário
+
+principal
+	// Declarações
+	inteiro horasTrabalhadas, valorHora, horaExtra, salario;
+	
+	// Instruções
+	escreva("Total de horas trabalhadas: ");
+	leia(horasTrabalhadas);
+	escreva("Valor por hora: ");
+	leia(valorHora);
+
+	se (horasTrabalhadas > 40) entao
+		horaExtra = horasTrabalhadas - 40;
+		salario = (horasTrabalhadas - 40) * 1.5 * valorHora + (horasTrabalhadas - horaExtra) * valorHora;
+	senao
+		salario = horasTrabalhadas * valorHora;
+	fimSe
+
+	escreva("O salário do funcionário será de: R$ ", salario);
+fimPrincipal

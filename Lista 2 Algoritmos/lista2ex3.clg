@@ -1,0 +1,25 @@
+algoritmo lista2ex3;
+// Síntese
+//  Objetivo:  Escrever por extenso o sexo de uma pessoa
+//  Entrada : Um caractere 'm' ou 'f'
+//  Saída   : O sexo escrito por extenso ou uma mensagem de erro
+
+principal
+	// Declarações
+	caracter sexo;
+
+	// Instruções
+	escreva("Sexo da pessoa (m / f): ");
+	leiaCaracter(sexo);
+	sexo = maiusculoCaracter(sexo);
+	
+	se (sexo == 'M') entao
+		escreva("Masculino");
+	senao
+		se (sexo == 'F') entao
+			escreva("Feminino");
+		senao
+			escreva("Caractere inválido");
+		fimSe
+	fimSe
+fimPrincipal

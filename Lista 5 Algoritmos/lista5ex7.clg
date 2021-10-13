@@ -1,0 +1,39 @@
+algoritmo liista5ex7;
+
+principal
+	// Declarações
+	real altB, altA, creB, creA, oprA, oprC;
+	inteiro anos;
+	
+	// Instruções
+	escreva("1° altura (em cm): ");
+	leia(altB);
+	escreva("Crescimento anual: ");
+	leia(creB);
+
+	escreva("2° altura (em cm): ");
+	leia(altA);
+	escreva("Crescimento anual: ");
+	leia(creA);
+
+	se (altA < altB) entao
+		oprA = altB;
+		oprC = creB;
+		
+		altB = altA;
+		creB = creA;
+
+		altA = oprA;
+		creA = oprC;
+	fimSe
+	anos = 0;
+	enquanto (altB < altA) faca
+		altB = altB + creB;
+		altA = altA + creA;
+		anos = anos + 1;
+	fimEnquanto
+	
+	escreval("");
+
+	escreva("Irá demorar ", anos, " anos para que a pessoa mais baixa se torne maior");
+fimPrincipal

@@ -1,0 +1,29 @@
+algoritmo lista5ex9;
+// Síntese
+//  Objetivo:  Calcular o peso e a quantidade total de blocos de uma pirâmide
+//  Entrada : Massa de cada bloco e a quantidade de blocos da base
+//  Saída   : Massa total e total de blocos da pirâmide
+
+principal
+	// Declarações
+	real massa, massaTotal;
+	inteiro camadaInferior, camadaSuperior, totalCamadas;
+	
+	// Instruções
+	escreva("Base da pirâmide: ");
+	leia(camadaInferior);
+	escreva("Massa de cada bloco: ");
+	leia(massa);
+	totalCamadas = 0;
+	massaTotal = camadaInferior * massa;
+	enquanto (camadaInferior >= 1) faca
+		totalCamadas = camadaInferior + totalCamadas;
+		camadaSuperior = camadaInferior - 1;
+		massaTotal = massaTotal + camadaSuperior * massa;
+		camadaInferior = camadaSuperior;
+	fimEnquanto
+
+	escreval("Massa total = ", massaTotal, " kg");
+	escreva("Será necessário um total de ", totalCamadas, " blocos para a construção");
+	
+fimPrincipal

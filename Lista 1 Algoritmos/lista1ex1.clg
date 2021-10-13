@@ -1,0 +1,12 @@
+algoritmo lista1ex1;
+// Síntese
+//  Objetivo:  Mostrar na tela "Hello world!"
+//  Entrada : N.A
+//  Saída   : "Hello world!"
+
+
+principal
+	// Declarações
+	// Instruções
+	escreva("Hello world!");
+fimPrincipal

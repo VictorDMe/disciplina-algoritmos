@@ -1,0 +1,15 @@
+algoritmo lista4ex1;
+// Síntese
+//  Objetivo:  Imprimir 100 vezes uma frase
+//  Entrada :
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro i;
+	
+	// Instruções
+	para (i de 1 ate 100 passo 1) faca 
+		escreval("Água mole em pedra dura, tanto bate até que fura");
+	fimPara
+fimPrincipal

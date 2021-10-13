@@ -1,0 +1,40 @@
+algoritmo lista3ex6;
+// Síntese
+//  Objetivo:  Verificar se um funcionário é apto para aposentadoria
+//  Entrada : ID, ano de nascimento, ano de ingresso na empresa.
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro ID, anoNascimento, anoEmpresa, idade, anosTrabalhados, aposentadoria;
+	
+	// Instruções
+
+	escreva("Código do funcionário: ");
+	leia(ID);
+	escreva("Ano de nascimento: ");
+	leia(anoNascimento);
+	escreva("Ano de ingresso na empresa: ");
+	leia(anoEmpresa);
+
+	idade = 2021 - anoNascimento;
+	anosTrabalhados = 2021 - anoEmpresa;	
+
+	// Se aposentadoria == 1, então o funcionário está apto para se aposentar
+	
+	aposentadoria = 0;
+	
+	se (idade >= 65 ou anosTrabalhados >= 30 ou (idade >= 60 e anosTrabalhados >= 25)) entao
+		aposentadoria = 1;
+	fimSe
+	
+	escolha(aposentadoria) 
+	caso 1
+		escreva("Requerer aposentadoria");
+		interrompa;
+	outroCaso
+		escreva("Não requerer aposentadoria");
+		interrompa;
+	fimEscolha
+	
+fimPrincipal

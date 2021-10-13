@@ -1,0 +1,35 @@
+algoritmo lista2ex6;
+// Síntese
+//  Objetivo:  Verificar se uma pessoa está no peso ideal, gorda ou magra
+//  Entrada : Peso (kg) e altura (m)
+//  Saída   : Peso ideal, gorda ou magra
+
+principal
+	// Declarações
+	real peso, altura;
+	inteiro pesoIdeal;
+	
+	// Instruções
+	escreva("Peso (kg): ");
+	leia(peso);
+	escreva("Altura (m): ");
+	leia(altura);
+
+	pesoIdeal = (altura - 1.1) * 100;
+
+	//Considerei uma margem de erro de 1
+	se (peso == pesoIdeal ou
+	peso == pesoIdeal + 1 ou
+	peso == pesoIdeal - 1) entao
+		escreva("PESO IDEAL");
+	senao
+		se (peso > pesoIdeal) entao
+			escreva("ACIMA DO PESO");
+		senao
+			se (peso < pesoIdeal) entao
+				escreva("ABAIXO DO PESO");
+			fimSe
+		fimSe
+	fimSe
+	
+fimPrincipal

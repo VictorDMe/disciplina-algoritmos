@@ -1,0 +1,46 @@
+algoritmo lista4ex7;
+// Síntese
+//  Objetivo:  Mostrar se o aluno digitado está aprovado ou não e, ao final, mostrar a quantidade de aprovados e reprovados
+//  Entrada : Nome e 3 notas de uma determinada quantidade de alunos
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro quantidade, quantidadeAprovados, quantidadeReprovados, i;
+	texto nome;
+	real nota1, nota2, nota3, media;
+	
+	// Instruções
+
+	escreva("Quantos alunos serão digitados? ");
+	leia(quantidade);
+
+	quantidadeAprovados = 0;
+	quantidadeReprovados = 0;
+	
+	para (i de 0 ate quantidade - 1 passo 1) faca
+		escreva("Nome do aluno: ");
+		leia(nome);
+		escreva("Nota 1: ");
+		leia(nota1);
+		escreva("Nota 2: ");
+		leia(nota2);
+		escreva("Nota 3: ");
+		leia(nota3);
+
+		media = (nota1 + nota2 + nota3) / 3;
+
+		se (media >= 5) entao
+			escreval("APROVADO");
+			quantidadeAprovados = quantidadeAprovados + 1;
+		senao
+			escreval("REPROVADO");
+			quantidadeReprovados = quantidadeReprovados + 1;
+		fimSe
+		escreval("");
+	fimPara
+	
+	escreval("Total de alunos aprovados: ", quantidadeAprovados);
+	escreval("Total de alunos reprovados: ", quantidadeReprovados);
+	
+fimPrincipal

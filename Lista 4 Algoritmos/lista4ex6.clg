@@ -1,0 +1,32 @@
+algoritmo lista4ex6;
+// Síntese
+//  Objetivo:  Imprimir o nome do aluno com maior nota
+//  Entrada : Nome e nota de uma quantidade e alunos
+//  Saída   : 
+
+principal
+	// Declarações
+	inteiro i, quantidade;
+	real nota, notaMaior;
+	texto nome, nomeMaior;
+	
+	// Instruções
+	escreva("Quantos alunos serão digitados? ");
+	leia(quantidade);
+
+	notaMaior = 0;
+	para (i de 0 ate quantidade - 1 passo 1) faca
+		escreva("Nome do aluno: ");
+		leia(nome);
+		escreva("Nota do aluno: ");
+		leia(nota);
+
+		se (nota > notaMaior) entao
+			notaMaior = nota;
+			nomeMaior = nome;
+		fimSe
+		escreval("");
+	fimPara
+
+	escreva("A maior nota foi do/a ", nomeMaior, " com a nota ", notaMaior);
+fimPrincipal

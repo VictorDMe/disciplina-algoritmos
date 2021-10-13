@@ -1,0 +1,19 @@
+algoritmo lista1ex5;
+// Síntese
+//  Objetivo:  Converter Celsius para fahrenheit 
+//  Entrada : Temperatura em °C
+//  Saída   : Temperatura em fahrenheit
+
+principal
+	// Declarações
+	real tempCelsius, tempFahrenheit;
+	
+	// Instruções
+	escreva("Temperatura em °C: ");
+	leia(tempCelsius);
+
+	tempFahrenheit = ((tempCelsius * 9) / 5) + 32;
+
+	escreva("Temperatura em fahrenheit: ", tempFahrenheit);
+
+fimPrincipal

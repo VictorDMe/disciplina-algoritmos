@@ -1,0 +1,35 @@
+algoritmo lista3ex4;
+// Síntese
+//  Objetivo:  Calcular o custo total de uma determinada compra
+//  Entrada : Preço unitário e quantidade
+//  Saída   : Valor total da compra
+
+principal
+	// Declarações
+	texto nomeProduto;
+	inteiro quantidade;
+	real precoUnitario, desconto;
+	
+	// Instruções
+	escreva("Nome do produto: ");
+	leia(nomeProduto);
+	escreva("Preço unitário: ");
+	leia(precoUnitario);
+	escreva("Quantidade: ");
+	leia(quantidade);
+
+	se (quantidade <= 5) entao
+		desconto = 0.98;
+	senao
+		se (quantidade <= 10) entao
+			desconto = 0.97;
+		senao
+			desconto = 0.95;
+		fimSe
+	fimSe
+	escreval("");
+	escreval("Valor total da compra");
+	escreval("Produto: ", nomeProduto);
+	escreva("Valor total: R$ ", precoUnitario * quantidade * desconto);
+	
+fimPrincipal

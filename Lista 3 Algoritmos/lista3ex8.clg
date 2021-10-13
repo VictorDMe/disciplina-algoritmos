@@ -1,0 +1,29 @@
+algoritmo lista3ex8;
+// Síntese
+//  Objetivo:  Verificar quantas horas durou um jogo de xadrez
+//  Entrada : Hora de início e de fim
+//  Saída   :Duração do jogo de xadrez
+
+principal
+	// Declarações
+	inteiro horaInicio, horaFim, totalHoras;
+	
+	// Instruções
+	escreva("Hora de início: ");
+	leia(horaInicio);
+	escreva("Hora de término: ");
+	leia(horaFim);
+
+	se (horaFim < horaInicio) entao
+		totalHoras = 24 - horaInicio + horaFim;
+	senao
+		se (horaFim > horaInicio) entao
+			totalHoras = horaFim - horaInicio;
+		senao
+			totalHoras = 24;
+		fimSe
+	fimSe
+
+	escreva("O jogo de xadrez durou ", totalHoras, " horas");
+	
+fimPrincipal

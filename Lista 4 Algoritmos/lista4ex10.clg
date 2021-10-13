@@ -1,0 +1,27 @@
+algoritmo lista4ex10;
+// Síntese
+//  Objetivo: Mostrar toda a tabuada 
+//  Entrada :
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro x, y;
+
+	// Instruções
+	para (x de 1 ate 10 passo 1) faca
+		para (y de 1 ate 10 passo 1) faca
+			se (x * y >= 10 e x >= 10) entao
+				escreva(y, " x ", x, " = ", x * y, "  ");
+			senao
+				se (x * y >= 10) entao
+					escreva(y, " x ", x, " = ", x * y, "   ");
+				senao
+					escreva(y, " x ", x, " = ", x * y, "    ");
+				fimSe
+			fimSe
+		fimPara
+		escreval("");
+	fimPara
+
+fimPrincipal

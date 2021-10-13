@@ -1,0 +1,43 @@
+algoritmo lista3ex2;
+// Síntese
+//  Objetivo:  Identificar qual cor o usuário deseja por meio de um caractere
+//  Entrada : caractere
+//  Saída   : Cor escrita por extenso
+
+
+principal
+	// Declarações
+	caracter cor;
+	
+	// Instruções
+	escreva("Caractere: ");
+	leiaCaracter(cor);
+
+	escolha(cor)
+	caso 'a'
+		escreva("Azul");
+		interrompa;
+	caso 'v'
+		escreva("Verde");
+		interrompa;
+	caso 'r'
+		escreva("Rosa");
+		interrompa;
+	caso 'p'
+		escreva("Preto");
+		interrompa;
+	caso 'b'
+		escreva("Branco");
+		interrompa;
+	caso 'l'
+		escreva("Laranja");
+		interrompa;
+	caso 'm'
+		escreva("Marrom");
+		interrompa;
+	outroCaso
+		escreva("Caractere não encontrado");
+		interrompa;
+	fimEscolha
+
+fimPrincipal

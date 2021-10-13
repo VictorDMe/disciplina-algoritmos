@@ -1,0 +1,31 @@
+algoritmo lista2ex4;
+// Síntese
+//  Objetivo:  Verificar se um número é divisível por 3 e 5 
+//  Entrada : Um número
+//  Saída   : Se ele é ou não divisível por 3 e 5
+
+principal
+	// Declarações
+	inteiro num, div3, div5;
+	
+	// Instruções
+	escreva("Número: ");
+	leia(num);
+
+	div3 = num % 3;
+	div5 = num % 5;
+
+	se (div3 == 0 e div5 == 0) entao
+		escreva("O número é divisível por 3 e 5.");
+	senao
+		se (div3 == 0 e div5 != 0) entao
+			escreva("O número é divisível por 3, mas não por 5");
+		senao
+			se (div3 != 0 e div5 == 0) entao
+				escreva("O número é divisível por 5, mas não por 3");
+			senao
+				escreva("O número não é divisível por 3 e nem 5");
+			fimSe
+		fimSe
+	fimSe
+fimPrincipal

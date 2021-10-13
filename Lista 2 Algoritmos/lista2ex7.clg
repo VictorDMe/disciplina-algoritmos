@@ -1,0 +1,36 @@
+algoritmo lista2ex7;
+// Síntese
+//  Objetivo:  Verificar se um aluno está aprovado ou reprovado
+//  Entrada : Total de aulas na escola, nota e presença do aluno
+//  Saída   : "Aprovado" ou "Reprovado"
+
+principal
+	// Declarações
+	inteiro aulasTotais, aulasPresenca;
+	real nota, presencaMin;
+	
+	// Instruções
+	escreva("Total de aulas ministradas: ");
+	leia(aulasTotais);
+	escreva("Total de aulas com presença: ");
+	leia(aulasPresenca);
+	escreva("Nota do aluno: ");
+	leia(nota);
+
+	presencaMin = aulasTotais * 0.75;
+
+	se (aulasPresenca >= presencaMin e nota >= 6) entao
+		escreva("APROVADO");
+	senao
+		se (aulasPresenca < presencaMin e nota >= 6) entao
+			escreva("REPROVADO POR FALTA");
+		senao
+			se (aulasPresenca >= presencaMin e nota < 6) entao
+				escreva("REPROVADO POR NOTA");
+			senao
+				escreva("REPROVADO POR FALTA E NOTA");
+			fimSe
+		fimSe
+	fimSe
+	
+fimPrincipal

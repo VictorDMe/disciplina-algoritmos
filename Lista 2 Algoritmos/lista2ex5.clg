@@ -1,0 +1,23 @@
+algoritmo lista2ex5;
+// Síntese
+//  Objetivo:  Verificar se um número é par ou ímpar
+//  Entrada : um número
+//  Saída   : "Ímpar" ou "par"
+
+principal
+	// Declarações
+	inteiro num;
+	
+	// Instruções
+	escreva("Número: ");
+	leia(num);
+
+	se (num % 2 == 0) entao
+		escreva("O número é par");
+	senao
+		se (num % 2 != 0) entao
+			escreva("O número é ímpar");
+		fimSe
+	fimSe
+
+fimPrincipal

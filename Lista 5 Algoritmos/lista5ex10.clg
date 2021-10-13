@@ -1,0 +1,28 @@
+algoritmo lista5ex10;
+// Síntese
+//  Objetivo:  Descobrir de qual turma é o estudante que tirou nota 10 no ENEM
+//  Entrada : Notas
+//  Saída   : Turma 
+
+principal
+	// Declarações
+	real nota;
+	inteiro turma, turmaNota, i, a;
+	
+	// Instruções
+	para (i de 1 ate 3 passo 1) faca
+		escreva("Quantos alunos possui a ", i, "° turma? ");
+		leia(turma);
+		para(a de 1 ate turma passo 1) faca
+			escreva("Nota do ", a, "° aluno: ");
+			leia(nota);
+			se (nota == 10) entao
+				turmaNota = i;
+			fimSe
+		fimPara
+		escreval("");
+	fimPara
+
+	escreva("O aluno com a maior nota está na ", turmaNota, "° turma");
+	
+fimPrincipal

@@ -1,0 +1,31 @@
+algoritmo lista5ex3;
+// Síntese
+//  Objetivo:  Calcular o bônus de clientes cadastrados
+//  Entrada : Nome e valor em compras do cliente
+//  Saída   : Valor com bônus
+
+principal
+	// Declarações
+	real bonus, valor;
+	texto nome;
+	
+	// Instruções
+	faca
+		escreva("Nome do cliente: ");
+		leia(nome);
+		se (comparaTexto(nome, "fim") != 0) entao
+			
+			escreva("Valor em compras: ");
+			leia(valor);
+			se (valor >= 500000) entao
+				bonus = 0.85;
+			senao
+				bonus = 0.90;
+			fimSe
+			
+			escreval("Sua compra teve um bônus e seu custo final será de R$ ", bonus * valor);
+			escreval("");
+		fimSe
+	enquanto (comparaTexto(nome, "fim") != 0);
+	
+fimPrincipal

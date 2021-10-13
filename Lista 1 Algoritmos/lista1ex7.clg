@@ -1,0 +1,21 @@
+algoritmo lista1ex7;
+// Síntese
+//  Objetivo:  Calcular  o IMC de uma pessoa
+//  Entrada : Massa de uma pessoa
+//  Saída   : IMC da pessoa
+
+
+principal
+	// Declarações
+	real altura, massa, imc;
+
+	// Instruções
+	escreva("Massa (kg): ");
+	leia(massa);
+	escreva("Altura (m): ");
+	leia(altura);
+
+	imc = massa / exp(altura, 2);
+
+	escreva("IMC: ", imc);
+fimPrincipal

@@ -1,0 +1,52 @@
+algoritmo lista5ex8;
+// Síntese
+//  Objetivo:  Calcular a média de um turma
+//  Entrada : Nome de estudante e suas 21 notas
+//  Saída   : Média
+
+principal
+	// Declarações
+	texto nome, grau;
+	real nota, notaBaixa, media;
+	inteiro i;
+	
+	// Instruções
+	escreva("Nome do aluno: ");
+	leia(nome);
+
+	enquanto (comparaTexto(nome, "fim") != 0) faca
+		media = 0;
+		notaBaixa = 0;
+		para (i	de 1 ate 21 passo 1) faca
+			escreva(i, "° nota: ");
+			leia(nota);
+			se (notaBaixa > nota ou i == 1) entao
+				media = media + notaBaixa;
+				notaBaixa = nota;
+			senao
+				media = nota + media;
+			fimSe
+			escreval("");
+		fimPara
+		
+		media = media / 20;
+		se (media < 6.9) entao
+			grau = "D";
+		senao
+			se (media < 7.9) entao
+				grau = "C";
+			senao
+				se (media < 8.9) entao
+					grau = "B";
+				senao
+					grau = "A";
+				fimSe
+			fimSe
+		fimSe
+		escreval("A média do aluno é ", media, " e seu grau é ", grau);
+		escreval("");
+		escreva("Nome do aluno: ");
+		leia(nome);
+	fimEnquanto
+	
+fimPrincipal

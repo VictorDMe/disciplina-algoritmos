@@ -1,0 +1,21 @@
+algoritmo lista1ex8;
+// Síntese
+//  Objetivo:  Calcular o desconto de uma mercadoria
+//  Entrada : Preço integral da mercadoria
+//  Saída   : Preço integral, preço do desconto e o valor final
+
+principal
+	// Declarações
+	real precoIntegral, precoDesconto, precoFinal;
+	
+	// Instruções
+	escreva("Preço integral do produto: ");
+	leia(precoIntegral);
+
+	precoDesconto = precoIntegral * 0.1;
+	precoFinal = precoIntegral - precoDesconto; 
+	
+	escreval("Preço total: R$ ", precoIntegral);
+	escreval("Valor do desconto: 10% = R$ ", precoDesconto);
+	escreva("Preço final se pago à vista: R$ ", precoFinal);
+fimPrincipal

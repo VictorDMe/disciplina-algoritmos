@@ -1,0 +1,29 @@
+algoritmo lista3ex5;
+// Síntese
+//  Objetivo:  calcular o sálario mensal de um funcionário.
+//  Entrada : quantidade de peças fabricas.
+//  Saída   : salário.
+
+principal
+	// Declarações
+	
+	inteiro quantidadeBrinquedos;
+	real salario;
+	
+	// Instruções
+
+	escreva("Quantidade de brinquedos produzidos: ");
+	leia(quantidadeBrinquedos);
+
+	se (quantidadeBrinquedos <= 500) entao
+		salario = 1050;
+	senao 
+		se (quantidadeBrinquedos <= 750) entao
+			salario = 1050 + (quantidadeBrinquedos - 500) * 0.5;
+		senao
+			salario = 1175 + (quantidadeBrinquedos - 750) * 0.75;
+		fimSe
+	fimSe
+
+	escreva("Salário: R$ ", salario);
+fimPrincipal

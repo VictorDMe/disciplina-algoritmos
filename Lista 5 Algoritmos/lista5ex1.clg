@@ -1,0 +1,27 @@
+algoritmo lista5ex1;
+// Síntese
+//  Objetivo:  Escrever por extenso o sexo de uma pessoa
+//  Entrada : Caractere
+//  Saída   : Sexo por extenso
+
+principal
+	// Declarações
+	caracter sexo;
+	
+	// Instruções
+	escreva("Digite seu sexo (m / f): ");
+	leiaCaracter(sexo);
+	
+	enquanto (sexo != 'm' e sexo != 'f') faca
+		escreval("caractere inválido!");
+		escreva("Por favor, digite novamente (m / f): ");
+		leiaCaracter(sexo);
+	fimEnquanto
+
+	se (sexo == 'm') entao
+		escreva("MASCULINO");
+	senao
+		escreva("FEMININO");
+	fimSe
+
+fimPrincipal

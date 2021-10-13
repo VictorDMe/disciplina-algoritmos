@@ -1,0 +1,19 @@
+algoritmo lista1ex9;
+// Síntese
+//  Objetivo:  Calcular o número de dias vividos por uma pessoa
+//  Entrada : Ano de nascimento
+//  Saída   : Dias vividos
+
+
+principal
+	// Declarações
+	inteiro anoNascimento, diasVividos;
+	
+	// Instruções
+	escreva("Ano de nascimento: ");
+	leia(anoNascimento);
+
+	diasVividos = (2021 - anoNascimento) * 365;
+
+	escreva("Essa pessoa viveu, aproximadamente, ", diasVividos, " dias.");
+fimPrincipal

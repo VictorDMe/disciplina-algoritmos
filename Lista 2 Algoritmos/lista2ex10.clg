@@ -1,0 +1,54 @@
+algoritmo lista2ex10;
+// Síntese
+//  Objetivo:  Calcular o valor de uma conta de água
+//  Entrada : Nome do consumidor, tipo de consumidor e consumo de água em m^3
+//  Saída   : Conta de água
+
+principal
+	// Declarações
+	texto nomeConsumidor;
+	caracter tipoConsumidor;
+	real consumoAgua, custoTotal;
+	
+	// Instruções
+	escreva("Nome do consumidor: ");
+	leia(nomeConsumidor);
+	escreva("Consumo de água em metros cúbicos: ");
+	leia(consumoAgua);
+	escreval("");
+	
+	escreval("Tipo de consumidor");
+	escreval("Use:");
+	escreval("'r' para residencial");
+	escreval("'c' para comercial");
+	escreval("'i' para industrial");
+	leiaCaracter(tipoConsumidor);
+	tipoConsumidor = maiusculoCaracter(tipoConsumidor);
+
+	se (tipoConsumidor == 'R') entao
+		custoTotal = 5 + 0.05 * consumoAgua;
+	senao
+		se (tipoConsumidor == 'C') entao
+			se (consumoAgua <= 80) entao
+				custoTotal = 500;
+			senao
+				custoTotal = 500 + (consumoAgua - 80) * 0.03;
+			fimSe
+		senao
+			se (tipoConsumidor == 'I') entao
+				se (consumoAgua <= 100) entao
+					custoTotal = 800;
+				senao
+					custoTotal = 800 + (consumoAgua - 100) * 0.04;
+				fimSe
+			senao 
+				escreva("Tipo de consumidor não encontrado");
+			fimSe
+		fimSe
+	fimSe
+
+	escreval("");
+	escreval(nomeConsumidor);
+	escreva("Valor: R$ ", custoTotal);
+
+fimPrincipal

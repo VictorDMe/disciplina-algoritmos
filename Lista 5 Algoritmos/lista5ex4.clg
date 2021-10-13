@@ -1,0 +1,36 @@
+algoritmo lista5ex4;
+// Síntese
+//  Objetivo:  Calcular o aumento e média de preços de uma loja
+//  Entrada : Código e preço de um produto
+//  Saída   : Novo preço, e, ao final, a média antes e depois do aumento
+
+principal
+	// Declarações
+	inteiro codigo, contador;
+	real custoInicial, custoFinal, mediaSA, mediaCA;
+	
+	// Instruções
+
+	escreva("Digite o código do produto: ");
+	leia(codigo);
+	
+	contador = 0;
+	mediaSA = 0;
+	mediaCA = 0;
+	
+	enquanto(codigo > 0) faca
+		escreva("Preço inicial do produto: ");
+		leia(custoInicial);
+		contador = contador + 1;
+		mediaSA = mediaSA + custoInicial;
+		mediaCA = mediaCA + custoInicial * 1.2;
+		escreval("O novo preço com 20% de aumento será de R$ ", custoInicial * 1.2);
+		escreval("");
+		escreva("Digite o código do produto: ");
+		leia(codigo);
+	fimEnquanto
+	
+	escreval("");
+	escreval("A média de preços antes do aumento era de R$ ", mediaSA / contador);
+	escreval("A média de preços depois do aumento é de R$ ", mediaCA / contador);
+fimPrincipal

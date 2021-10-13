@@ -1,0 +1,31 @@
+algoritmo lista4ex9;
+// Síntese
+//  Objetivo:  Calcular os termos da seríe de Fibonacci
+//  Entrada : 
+//  Saída   :
+
+
+principal
+	// Declarações
+	inteiro i, a, b;
+	
+	// Instruções
+	a = 1;
+	b = 1;
+	
+	para (i de 1 ate 50 passo 1) faca
+		
+		se (i == 1 ou i == 2) entao
+			escreva("1, ");
+		
+		senao
+			escreva(a + b, ", ");
+			
+			se (i % 2 == 0) entao
+				a = a + b;
+			senao
+				b = a + b;
+			fimSe
+		fimSe
+	fimPara
+fimPrincipal

@@ -1,0 +1,19 @@
+algoritmo lista4ex3;
+// Síntese
+//  Objetivo:  Escrevar em ordem decrescente todos os números a partir do número digitado
+//  Entrada : Número
+//  Saída   :
+
+principal
+	// Declarações
+	inteiro numero, i;
+	
+	// Instruções
+
+	escreva("Número: ");
+	leia(numero);
+
+	para (i de numero ate 0 passo -1) faca
+		escreval(i);
+	fimPara
+fimPrincipal

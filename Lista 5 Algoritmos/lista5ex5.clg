@@ -1,0 +1,48 @@
+algoritmo lista5ex5;
+// Síntese
+//  Objetivo:  Show distance values in certain quantity of measures
+//  Entrada : values in foot and miles
+//  Saída   : same values in meters and kilometers 
+
+principal
+	// Declarações
+	caracter option;
+	real miles, foot, meters, kilometers, distance;
+		
+	// Instruções
+
+	escreva("Miles or foot? (m / f) ");
+	leiaCaracter(option);
+
+	foot = 0;
+	miles = 0;
+	
+	enquanto (option != 'n') faca
+		escreva("Distance: ");
+		leia(distance);
+		
+		escolha(option)
+			caso 'm'
+				miles = miles + distance;
+				interrompa;
+			caso 'f'
+				foot = foot + distance;
+				interrompa;
+			outroCaso
+				escreval("Invalid measure option!");
+		fimEscolha
+		escreval("");
+		escreva("Miles or foot? (m / f) ");
+		leiaCaracter(option);
+		
+	fimEnquanto
+	escreval("");
+	meters = foot / 3.28;
+	kilometers = miles / 1.61;
+
+	escreval("Total in foot: ", foot + miles * 5280); 
+	escreval("Total in miles: ", miles + foot / 5280);
+	escreval("Total in meters: ", meters + kilometers * 1000);
+	escreval("Total in kilometers: ", kilometers + meters / 1000);
+	
+fimPrincipal

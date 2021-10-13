@@ -1,0 +1,24 @@
+algoritmo lista2ex1;
+// Síntese
+//  Objetivo:  Calcular o custo total de uma compra de maças
+//  Entrada : Quantidade de maças compradas
+//  Saída   : Preço total das maças
+
+principal
+	// Declarações
+	inteiro quantidadeMacas;
+	real precoTotal, precoUnidade;
+	
+	// Instruções
+	escreva("Quantidade maças que serão compradas: ");
+	leia(quantidadeMacas);
+
+	precoUnidade = 1.30;
+	se (quantidadeMacas >= 12) entao
+		precoUnidade = 1;
+	fimSe
+	
+	precoTotal = quantidadeMacas * precoUnidade;
+
+	escreva("Custo total da compra: R$ ", precoTotal);
+fimPrincipal

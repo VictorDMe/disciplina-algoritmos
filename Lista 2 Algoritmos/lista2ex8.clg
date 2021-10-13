@@ -1,0 +1,41 @@
+algoritmo lista2ex8;
+// Síntese
+//  Objetivo:  Mostrar o nome e a altura da menor pessoa
+//  Entrada : 3 pessoas com seu respectivo nome e altura
+//  Saída   : nome e altura da menor pessoa
+
+principal
+	// Declarações
+	texto n1, n2, n3, nomeMenor;
+	real a1, a2, a3, alturaMenor;
+
+	// Instruções
+	escreva("Nome da 1° pessoa: ");
+	leia(n1);
+	escreva("Altura da 1° pessoa: ");
+	leia(a1);
+	escreva("Nome da 2° pessoa: ");
+	leia(n2);
+	escreva("Altura da 2° pessoa: ");
+	leia(a2);
+	escreva("Nome da 3° pessoa: ");
+	leia(n3);
+	escreva("Altura da 3° pessoa: ");
+	leia(a3);
+
+	se (a1 < a2 e a1 < a3) entao
+		nomeMenor = n1;
+		alturaMenor = a1;
+	senao
+		se (a2 < a1 e a2 < a3) entao
+			nomeMenor = n2;
+			alturaMenor = a2;
+		senao
+			nomeMenor = n3;
+			alturaMenor = a3;
+		fimSe
+	fimSe
+	
+	escreva(nomeMenor, " com ", alturaMenor, " tem a menor altura dentre as pessoas digitadas");
+
+fimPrincipal

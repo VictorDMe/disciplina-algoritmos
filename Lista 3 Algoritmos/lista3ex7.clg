@@ -1,0 +1,49 @@
+algoritmo lista3ex7;
+// Síntese
+//  Objetivo:  Verificar se é póssivel um triângulo existir com determinados valores e verifical qual o tipo do triângulo
+//  Entrada : Catetos do triângulo;
+//  Saída   : Tipo de triângulo;
+
+principal
+	// Declarações
+	inteiro a, b, c, existenciaPossivel;
+	texto tipoTriangulo;
+	
+	// Instruções
+	escreva("Cateto A: ");
+	leia(a);
+	escreva("Cateto B: ");
+	leia(b);
+	escreva("Cateto C: ");
+	leia(c);
+
+	existenciaPossivel = 0;
+	
+	//Verificando se é póssivel a existência de um triângulo
+	se ((a + b > c) e (a + c > b) e (b + c > a)) entao
+		existenciaPossivel = 1;
+	fimSe
+
+	se (existenciaPossivel == 1) entao
+		se ((a == b e a != c) ou (a == c e a != b) ou (b == c e b != a)) entao
+			tipoTriangulo = "isósceles";
+		senao
+		 	se (a == b e a == c) entao
+		 		tipoTriangulo = "equilátero";
+		 	senao
+		 		tipoTriangulo = "escaleno";
+		 	fimSe
+		fimSe
+	fimSe
+	escreval("");
+
+	escolha(existenciaPossivel)
+	caso 1
+		escreva("O triângulo digitado é do tipo ", tipoTriangulo);
+		interrompa;
+	caso 0
+		escreva("Não é póssivel existir um triângulo com os valores digitados");
+		interrompa;
+	fimEscolha
+	
+fimPrincipal
