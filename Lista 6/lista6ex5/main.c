@@ -6,7 +6,7 @@ Saída: Temperatura em fahrenheit
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float tempC;
 
     printf("Temperatura em celsius: ");

@@ -6,7 +6,7 @@ Saída: Média
 
 #include <stdio.h>
 
-int main(){
+int main(void){
     float media, nota1, nota2, nota3;
 
     printf("digite a nota 1: ");

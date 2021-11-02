@@ -6,7 +6,7 @@ Saída: Valor de venda
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float valorCompra;
 
     printf("Valor de compra: R$ ");

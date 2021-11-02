@@ -6,7 +6,7 @@ Saída: IMC
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float peso, altura;
 
     printf("Digite seu peso: ");

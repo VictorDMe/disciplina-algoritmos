@@ -6,7 +6,7 @@ Saída: Salário líquido
 
 #include <stdio.h>
 
-int main(){
+int main(void){
     float salarioBruto;
 
     printf("Salario bruto: R$ ");

@@ -6,7 +6,7 @@ Saíde: Peso ideal
 
 #include <stdio.h>
 
-int main() {
+int main(void) {
     float altura;
 
     printf("Digite seu altura: ");
