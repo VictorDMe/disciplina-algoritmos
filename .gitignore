@@ -1,5 +1,7 @@
 *.depend
 *.layout
 *.rar
-obj/
-bin/
+*.o
+*.exe
+obj/*
+bin/*
